@@ -12,9 +12,9 @@ function Layout({ children, toggleTheme }) {
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <AppBar 
-        position="fixed" 
-        sx={{ 
+      <AppBar
+        position="fixed"
+        sx={{
           zIndex: (theme) => theme.zIndex.drawer + 1,
           backgroundColor: theme.palette.mode === 'dark' ? '#1a1a1a' : '#2196f3'
         }}
@@ -36,9 +36,9 @@ function Layout({ children, toggleTheme }) {
           </Box>
 
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-            <IconButton 
-              sx={{ ml: 1 }} 
-              onClick={toggleTheme} 
+            <IconButton
+              sx={{ ml: 1 }}
+              onClick={toggleTheme}
               color="inherit"
             >
               {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
@@ -71,14 +71,15 @@ function Layout({ children, toggleTheme }) {
         </Toolbar>
       </AppBar>
 
-      <Box 
-        component="main" 
-        sx={{ 
+      <Box
+        component="main"
+        sx={{
           flexGrow: 1,
           pt: { xs: 8, sm: 9 },
           px: { xs: 1, sm: 2, md: 3 },
           backgroundColor: theme.palette.mode === 'dark' ? '#121212' : '#f5f5f5',
-          minHeight: '100vh'
+          minHeight: '100vh',
+          width: '100vw'
         }}
       >
         {children}

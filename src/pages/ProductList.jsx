@@ -73,17 +73,17 @@ function ProductList() {
 
   return (
     <Box>
-      <Typography 
-        variant="h4" 
-        gutterBottom
-        sx={{
-          textAlign: 'left',
-          mb: 4,
-          fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' }
-        }}
-      >
-        Каталог товаров
-      </Typography>
+      <Box sx={{ textAlign: 'center', mb: 4 }}>
+        <Typography 
+          variant="h4" 
+          gutterBottom
+          sx={{
+            fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' }
+          }}
+        >
+          Каталог товаров
+        </Typography>
+      </Box>
 
       <Paper 
         elevation={2}
